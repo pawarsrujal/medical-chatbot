@@ -94,7 +94,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ```bash
 pip install -r requirements.txt
+pip install groq
 ```
+
 
 This will install all required packages including:
 - LangChain (0.3.26) - AI framework
