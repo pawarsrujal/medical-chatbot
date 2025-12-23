@@ -1,15 +1,54 @@
-# Medical Chatbot
+# 🏥 Medical RAG Chatbot
 
-A medical chatbot application built with LangChain, Flask, and Pinecone vector database for intelligent medical query responses.
+A **Medical Question Answering Chatbot** built using **Retrieval-Augmented Generation (RAG)**.  
+The chatbot retrieves relevant information from **medical PDF documents** stored in a **Pinecone vector database** and generates answers using a **Groq LLM**.
+
+---
 
 ## 🚀 Project Overview
 
-This project implements an AI-powered medical chatbot that can answer medical queries using advanced natural language processing and retrieval-augmented generation (RAG) techniques.
+This project implements an AI-powered medical chatbot that:
+- Loads medical PDFs
+- Converts them into embeddings
+- Stores them in Pinecone
+- Retrieves relevant context for user questions
+- Generates accurate answers using a Large Language Model
+
+---
+
+## 🧠 Tech Stack
+
+- **Python 3.11**
+- **Flask** – Backend web framework
+- **LangChain** – RAG orchestration
+- **Pinecone** – Vector database
+- **Groq API** – LLM inference
+- **Sentence Transformers** – Embeddings
+- **PyPDF** – PDF text extraction
+- **HTML / CSS / JavaScript** – Frontend UI
+
+---
+
+## ✨ Features
+
+- 📄 PDF-based medical knowledge ingestion  
+- 🔎 Semantic search using vector embeddings  
+- 🧠 Fast LLM responses via Groq  
+- ⚡ Real-time chatbot interaction  
+- 🌐 Clean and responsive UI  
+- 🔐 Secure environment variable usage  
+
+---
 
 ## 📋 Prerequisites
 
-- Python 3.11
+- Python **3.11**
 - Git
+- Pinecone API key
+- Groq API key
+
+---
+
 
 ## 🛠️ Setup Instructions
 
@@ -63,14 +102,14 @@ This will install all required packages including:
 - Sentence Transformers (4.1.0) - Embeddings
 - PyPDF (5.6.1) - PDF processing
 - Pinecone - Vector database
-- OpenAI - LLM integration
+- Groq - LLM integration
 
 ### 5. Configure Environment Variables
 
 Create a `.env` file in the root directory and add your API keys:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_openai_api_key_here
 PINECONE_API_KEY=your_pinecone_api_key_here
 ```
 
