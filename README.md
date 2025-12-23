@@ -159,18 +159,21 @@ The Flask server will start and you can access the chatbot interface.
 - **Author**: Srujal Pawar
 - **Email**: srujalpawar2004@gmail.com
 
-### Key Dependencies
+### 🔑 Key Dependencies
 
 | Package | Version | Purpose |
-|---------|---------|---------|
-| langchain | 0.3.26 | AI/LLM framework |
-| langchain-openai | 0.3.24 | OpenAI integration |
-| langchain-pinecone | 0.2.8 | Pinecone vector store |
-| langchain-community | 0.3.26 | Community integrations |
-| flask | 3.1.1 | Web framework |
-| sentence-transformers | 4.1.0 | Text embeddings |
-| pypdf | 5.6.1 | PDF processing |
-| python-dotenv | 1.1.0 | Environment management |
+|-------|--------|--------|
+| flask | 3.1.1 | Web framework for chatbot UI |
+| langchain | 0.3.26 | RAG orchestration framework |
+| langchain-community | 0.3.26 | Document loaders & utilities |
+| langchain-pinecone | 0.2.8 | Pinecone vector store integration |
+| sentence-transformers | 4.1.0 | Text embedding generation |
+| pypdf | 5.6.1 | PDF document processing |
+| pinecone-client | latest | Vector database backend |
+| groq | latest | LLM inference (LLaMA 3.1) |
+| python-dotenv | 1.1.0 | Environment variable management |
+| requests | latest | API communication |
+
 
 ## 📝 License
 
